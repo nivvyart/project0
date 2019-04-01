@@ -1,0 +1,28 @@
+.container {
+  max-width: 960px; /*this is a standard width, good for most screens*/
+  margin: 0 auto;
+  padding: 2em;
+}
+body {
+  background-image: url('../images/bliss.jpg');
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border: 2px solid teal;
+}
+
+.game {
+  display: flex;                       /* establish flex container */
+  flex-wrap: wrap;                     /* enable flex items to wrap */
+  justify-content: space-around;
+}
+
+button {
+  margin-left: 46%;
+}

@@ -24,7 +24,12 @@ for (let i = 0; i < ttt['c'].length; i++) {
   ttt['c'][i] = 0
 }
 bchk();
+playerOneTurn = true;
 }
+
+//game score, if score = 13 draw
+gameScore = 0
+
 
 
 // player turn managemnet
@@ -44,6 +49,7 @@ const player1 = function(row, pos) {
     console.log('illegal move')
     } else { // make the move, ie update game logic
     ttt[row][pos-1] = 1
+    gameScore += 1
     winCheck();
     playerOneTurn = false;
     }
@@ -54,10 +60,25 @@ const player2 = function(row, pos) {
     console.log('illegal move')
     } else { // make the move, ie update game logic
     ttt[row][pos-1] = 2
+    gameScore += 2
     winCheck();
     playerOneTurn = true;
     }
   }
+const player3 = function() {
+  if (gameScore === 1) {
+    if (ttt.b[1]===0){
+      ttt.b[1] = 2
+    } else {
+      ttt.a[0] = 2
+    }
+  }
+  if (gameScore === 4) {
+
+  }
+
+}
+
 
 //define win conditions. --- need to define draw condition too. if array total exceeds 12
 // locations
@@ -72,61 +93,72 @@ const winCheck = function() {
   c2 = ttt.c[1]
   c3 = ttt.c[2]
 
+const player1Win = function() {
+  console.log('player1 wins');
+}
+const player2Win = function() {
+  console.log('player2 wins');
+}
+
+//draw
+if (gameScore === 13){
+  console.log('game is a draw');
+}
 //a1/a2/a3
 if (a1 === 1 && a2 === 1 && a3 === 1) {
-  console.log('player 1 wins');
+  player1Win();
 }
 if (a1 === 2 && a2 === 2 && a3 === 2){
-  console.log('player 2 wins');
+  player2Win();
 }
 //b1/b2/b3
 if (b1 === 1 && b2 === 1 && b3 === 1) {
-  console.log('player 1 wins');
+  player1Win();
 }
 if (b1 === 2 && b2 === 2 && b3 === 2){
-  console.log('player 2 wins');
+  player2Win();
 }
 //c1/c2/c3
 if (c1 === 1 && c2 === 1 && c3 === 1) {
-  console.log('player 1 wins');
+  player1Win();
 }
 if (c1 === 2 && c2 === 2 && c3 === 2){
-  console.log('player 2 wins');
+  player2Win();
 }
 //a1,b1,c1
 if (a1 === 1 && b1 === 1 && c1 === 1) {
-  console.log('player 1 wins');
+  player1Win();
 }
 if (a1 === 2 && b1 === 2 && c1 === 2){
-  console.log('player 2 wins');
+  player2Win();
 }
 //a2, b2, c2
 if (a2 === 1 && b2 === 1 && c2 === 1) {
-  console.log('player 1 wins');
+  player1Win();
 }
 if (a2 === 2 && b2 === 2 && c2 === 2){
-  console.log('player 2 wins');
+  player2Win();
 }
 //a3, b3, c3
 if (a3 === 1 && b3 === 1 && c3 === 1) {
-  console.log('player 1 wins');
+  player1Win();
 }
 if (a3 === 2 && b3 === 2 && c3 === 2){
-  console.log('player 2 wins');
+  player2Win();
 }
 //a1, b2, c3
 if (a1 === 1 && b2 === 1 && c3 === 1) {
-  console.log('player 1 wins');
+  player1Win();
 }
 if (a1 === 2 && b2 === 2 && c3 === 2){
-  console.log('player 2 wins');
+  player2Win();
 }
 //a3, b2, c1
 if (a3 === 1 && b2 === 1 && c1 === 1) {
-  console.log('player 1 wins');
+  player1Win();
 }
 if (a3 === 2 && b2 === 2 && c1 === 2){
-  console.log('player 2 wins');
+  player2Win();
 }
 bchk();
 }

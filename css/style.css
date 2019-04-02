@@ -11,6 +11,10 @@ h1, h2 {
   text-align: center;
 }
 
+nav {
+  padding: 1em;
+}
+
 img {
   width: 250px;
   height: 250px;

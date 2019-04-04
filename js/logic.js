@@ -25,6 +25,7 @@ for (let i = 0; i < ttt['c'].length; i++) {
 }
 bchk();
 playerOneTurn = true;
+gameScore = 0;
 }
 
 //game score, if score = 13 draw
@@ -166,7 +167,3 @@ if (a3 === 2 && b2 === 2 && c1 === 2){
 }
 bchk();
 }
-
-
-// each position needs a variable location, whats the most logical way to record these? ie MOVES
-//ttt[array][position]

@@ -1,17 +1,24 @@
-/* .navContainer{
-  width: 100px;
-  margin-left: 0px;
-  padding: 2em;
-  text-align: left;
-  display: flex;
-} */
+.flexContainer {
+  display:flex;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container1 {
+  max-width: 200px;
+}
 
 .container {
-  max-width: 960px; /*this is a standard width, good for most screens*/
-  margin: 0 auto;
-  padding: 2em;
+  max-width: 860px; /*this is a standard width, good for most screens*/
+  padding: 0 1em 0 0;
   text-align: center;
 }
+
+h3 {
+  padding-left: 30px;
+}
+
 
 body {
   /* background-image: url('../images/bliss.jpg'); */
@@ -20,20 +27,13 @@ body {
   line-height: 1.6;
   margin: 0;
 }
+nav {
+  margin-top: 220px;
+}
 
 ul {
     list-style-type: none;
-    text-align: center;
-    background-color: grey;
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 100%;
-}
-
-li {
-  display: inline;
-  margin: 1em;
-  padding: 1em;
+    padding-left: 0,
 }
 
 .button {
@@ -131,6 +131,18 @@ h1 {
 
 h2 {
   margin-top: 0;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+h4 {
+  font-style: italic;
+}
+
+#score {
+  padding-top:  3em;
 }
 
 img {

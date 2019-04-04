@@ -1,9 +1,20 @@
 #TicTacToe! Dogs vs cats edition.
+A self made version of TicTacToe
+
+## Live link:
+https://nivvyart.github.io/project0/
+
+##Languages/Frameworks used
+- HTML/CSS webapp
+- JavaScript game logic
+- Jquery DOM manipulation
+
+
 
 ## todo:
 3. keep score on the side
-4. AI? - shit ai might be fine for now
-6. smart AI using snuffels.
+4. AI, random generation
+6. smart AI where only draw is possible.
 
 ## Recent features:
 1. once a player selects a field make it no longer clickable

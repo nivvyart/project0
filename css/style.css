@@ -1,24 +1,39 @@
+/* .navContainer{
+  width: 100px;
+  margin-left: 0px;
+  padding: 2em;
+  text-align: left;
+  display: flex;
+} */
+
 .container {
   max-width: 960px; /*this is a standard width, good for most screens*/
   margin: 0 auto;
   padding: 2em;
   text-align: center;
 }
+
 body {
   /* background-image: url('../images/bliss.jpg'); */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 1.6;
+  margin: 0;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
+    text-align: center;
+    background-color: grey;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
 }
+
 li {
   display: inline;
   margin: 1em;
   padding: 1em;
-  background-color: coral;
 }
 
 .button {

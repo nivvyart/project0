@@ -2,6 +2,8 @@
 
 ## todo:
 1. once a player selects a field make it no longer clickable
+- yes but its disabled for good....
+
 2. when the game is won make it appear on screen and lock down game inputs
 3. keep score on the side
 4. AI? - shit ai might be fine for now

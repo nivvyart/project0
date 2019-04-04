@@ -30,7 +30,9 @@ playerOneTurn = true;
 //game score, if score = 13 draw
 gameScore = 0
 
-
+//player score
+catScore = 0
+dogScore = 0
 
 // player turn managemnet
 let playerOneTurn = true;
@@ -65,19 +67,19 @@ const player2 = function(row, pos) {
     playerOneTurn = true;
     }
   }
-const player3 = function() {
-  if (gameScore === 1) {
-    if (ttt.b[1]===0){
-      ttt.b[1] = 2
-    } else {
-      ttt.a[0] = 2
-    }
-  }
-  if (gameScore === 4) {
-
-  }
-
-}
+// const player3 = function() {
+//   if (gameScore === 1) {
+//     if (ttt.b[1]===0){
+//       ttt.b[1] = 2
+//     } else {
+//       ttt.a[0] = 2
+//     }
+//   }
+//   if (gameScore === 4) {
+//
+//   }
+//
+// }
 
 
 //define win conditions. --- need to define draw condition too. if array total exceeds 12
@@ -94,15 +96,17 @@ const winCheck = function() {
   c3 = ttt.c[2]
 
 const player1Win = function() {
-  console.log('player1 wins');
+  catScore += 1
+  catWins()
 }
 const player2Win = function() {
-  console.log('player2 wins');
+  dogScore += 1
+  dogWins()
 }
 
 //draw
 if (gameScore === 13){
-  console.log('game is a draw');
+  draw();
 }
 //a1/a2/a3
 if (a1 === 1 && a2 === 1 && a3 === 1) {

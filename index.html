@@ -8,16 +8,52 @@
   <title>cat vs dog</title>
 </head>
 <body>
-
+  <nav>
+    <ul>
+    <li><a href="http://google.com">Connect4<a/></li>
+    <li><a href="http://google.com">Pong<a/></li>
+  </ul>
+</nav>
 <div class="container">
+
+
   <h1>Cats vs dogs</h1>
   <h2>The final battle</h2>
-  <nav><button id="reset">reset game</button></nav>
-  <div id="gameselect">
-    <h2>chose your team</h2>
-    <button>Dogs</button>
-    <button>Cats</button>
-  </div>
+  <button id="modalBtn" class="button">Choose Species</button>
+
+    <div id="simpleModal" class="modal">
+      <div class='modal-content'>
+        <h3>Player One choose your Species<h3>
+        <button class="button" id="catChoice">Cat</button>
+        <button class="button" id="dogChoice">Dog</button>
+      </div>
+    </div>
+
+    <div class="winConditionCat">
+      <div class='modal-content'>
+        <span class="closeBtn" id="catClose">&times;</span>
+        <h3>Cats are the best!</h3>
+        <button id="catPlayAgain"class="button">Play again?</button>
+      </div>
+    </div>
+
+    <div class="winConditionDog">
+      <div class='modal-content'>
+      <span class="closeBtn" id="dogClose">&times;</span>
+        <h3>Dogs are the best!</h3>
+        <button id="dogPlayAgain" class="button">Play again?</button>
+      </div>
+    </div>
+
+    <div class="winConditionDraw">
+      <div class='modal-content'>
+      <span class="closeBtn" id="drawClose">&times;</span>
+        <h3>No winner was found...</h3>
+        <button id="drawPlayAgain" class="button">Play again?</button>
+      </div>
+    </div>
+
+
 
 
   <table class="game">
@@ -37,8 +73,11 @@
       <td><img id="c3" class="default" src="images/catdog.png" alt=""/></td>
     </tr>
     </table>
-</div>
+    <button id="reset" class="button">reset game</button>
+    <div></div>
+    <button id="somethineElse" class="button">Play something Else?</button>
 
+</div>
 
 
 
@@ -48,7 +87,7 @@
 
   <script src="js/jquery.js"></script>
   <script src="js/logic.js"></script>
-    <script src="js/game.js"></script>
+  <script src="js/game.js"></script>
 </body>
 </html>
 

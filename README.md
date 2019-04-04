@@ -12,7 +12,6 @@ https://nivvyart.github.io/project0/
 
 
 ## todo:
-3. keep score on the side
 4. AI, random generation
 6. smart AI where only draw is possible.
 
@@ -22,3 +21,4 @@ https://nivvyart.github.io/project0/
 5. player can select if X or O
 7. change the divs to tables for easier formatting, similar to connect 4.
 8. tidy up formatting.
+3. keep score on the side

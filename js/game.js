@@ -16,14 +16,14 @@ const catWins = function() {
 console.log('cat wins');
 lockDown();
 $('.winConditionCat').css('display', 'block')
-$('#catScore').text(`Cat: ${catScore}`)
+$('#catScore').text(`Cats: ${catScore}`)
 }
 
 const dogWins = function() {
 console.log('dog wins');
 lockDown()
 $('.winConditionDog').css('display', 'block')
-$('#dogScore').text(`Dog: ${catScore}`)
+$('#dogScore').text(`Dogs: ${dogScore}`)
 }
 
 const draw = function() {
